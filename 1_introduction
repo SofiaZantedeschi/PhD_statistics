@@ -1,0 +1,77 @@
+getwd()
+setwd("C:/Users/Sofia/Desktop/Sofia/PhD")
+dir.create(file.path(getwd(), "test"), recursive=T)
+install.packages("performance", dep=T)
+
+install.packages("ggplot2", dep=T)
+install.packages("tidyverse", dep=TRUE)
+
+# create a vector
+x <- c(1.1, 2, 3.5, 5.6, 7.3)
+x # calling the vector
+
+
+# give names to the objects in the vector
+v <- c(1.1, 2.3, 4.5, 7.78, 8.34)
+names (v) <- c("e1", "e2", "e3", "e4", "e5")
+v[2]
+mysum <- function(v) sum(v)
+muysum1 <- mysum (v)
+muysum1
+
+# create a second vector
+y <- c(2, 4, 6, 8, 10)
+y
+
+
+# which packages are already installed
+library()
+install.packages("pkg") ### not working
+
+# examples
+10^2 + 20
+log(3.4) - exp(1.3)+ abs (-5.6)
+
+x1 <- 100
+x2 <- x1 + 1
+x2
+
+# which obkects I have created in this sessions
+ls()
+
+#removing some objects
+rm(list= "x2")
+rm(list= "x1")
+
+
+# create a matrix
+table <- matrix(1:12, nrow=3, ncol=4)
+table
+table[1,]
+
+
+# fundamental of graphs
+g <- sample (1:6, size=1200, replace=TRUE)
+d <- table(g)
+barplot(d, ylim=1000)
+
+#install useful packages
+install.packages("car", dep=T)
+installed.packages("readx1", dep=T)
+
+# Object: do not start with numbers. 
+# Varibales: numbers or categories. Categorical (nominal, ordinal).
+  # can be different types of objects
+# Vector: most common data type -> sequence of data elments of the same type
+  # Logical, intefer, numeric, complex, character
+# Matrix: objects inn a 2D layout
+  # data in vector
+  # some vectors are rows and others are columns
+# List: can have different data types
+# Data frame: can store data into an order manner. 
+# Operators: 
+  # arithmetic
+  # relational -> to compare actual values and the output is a boolean value
+  # logical -> and, not, or
+  # conditional statements and loops -> if, else if, else, for
+# Dataset: 
