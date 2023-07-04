@@ -52,12 +52,38 @@ table[1,]
 
 # fundamental of graphs
 g <- sample (1:6, size=1200, replace=TRUE)
-d <- table(g)
-barplot(d, ylim=1000)
+barplot(table(g), ylim=(0,1000))
 
 #install useful packages
 install.packages("car", dep=T)
 installed.packages("readx1", dep=T)
+
+# create an object
+k <- 1
+# to show it you can do
+k
+print(k)
+# to know which type of object
+class(k)
+
+# is k an integer?
+is.integer(k)
+
+# create an object like an integer by adding L
+yL=3L
+is.integer(y)
+
+
+# converting a numeric value into an integer
+as.integer(3.14)
+a <- as.integer (3.14)
+
+
+
+
+
+
+
 
 # Object: do not start with numbers. 
 # Varibales: numbers or categories. Categorical (nominal, ordinal).
@@ -74,4 +100,10 @@ installed.packages("readx1", dep=T)
   # relational -> to compare actual values and the output is a boolean value
   # logical -> and, not, or
   # conditional statements and loops -> if, else if, else, for
-# Dataset: 
+# Dataset: spreadsheet
+# Getting data in RStudio 
+  # manually: data.frma() or tibble()
+  # import: 
+    # text: readLines()
+    # tabular: CSV, TSV read.table() or read_csv() in readr package
+    # excel: XLSX xlsx package
