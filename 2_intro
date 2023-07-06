@@ -1,0 +1,9 @@
+# PhD_statistics
+
+## create a vector object with 5 numbers inside it
+v <- c (1,2,3,4,5) this is a numeric vector but number inside can be 1.2, 3.4 etc. this is an integer vector
+
+## create a dataframe, with 3 column and 5 rows
+# what is a dataframe? a sequence of vectors that R concatenates in columns, so you have vertical vector and each vector has different data but of the same type
+vtr3=c(1:5)
+vtr4=c("Lucio", "Fabrizio", "Anna", "Rita", "Sofia")
